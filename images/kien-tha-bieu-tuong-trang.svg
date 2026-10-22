@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+<title>KIEN THA - bieu tuong trang</title>
+<g transform="translate(16.09,-11.46) scale(0.97524)"><g>
+  <g stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <polyline stroke-width="30" points="214,286 170,318 146,384"/>
+    <polyline stroke-width="30" points="238,292 232,336 214,390"/>
+    <polyline stroke-width="30" points="260,286 302,316 322,380"/>
+    <path stroke-width="26" d="M336,228 Q346,180 396,170"/>
+  </g>
+  <ellipse cx="112" cy="276" rx="76" ry="58" fill="#FFFFFF"/>
+  <ellipse cx="238" cy="272" rx="42" ry="32" fill="#FFFFFF"/>
+  <circle cx="326" cy="256" r="38" fill="#FFFFFF"/>
+  <rect x="376.0" y="228.0" width="80" height="80" rx="14.0" fill="#FFFFFF"/>
+</g></g>
+</svg>

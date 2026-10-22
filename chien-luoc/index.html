@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>30 triệu mỗi tháng từ tài sản cần khoảng 6 tỷ (giả định 6% một năm). Góp 10 triệu mỗi tháng thì mất khoảng 23 năm.</title>
+<meta name="description" content="Muốn rút 30 đến 100 triệu mỗi tháng từ tài sản thì cần bao nhiêu tiền, nếu giả định tài sản tăng 4 đến 8% một năm? Tôi tính ra từng con số, kèm 3 cách bắt đầu từ tiền lương. Đây là phép tính giả định, không phải khả năng bạn sẽ đạt.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hieuthinhvuong.github.io/chien-luoc/">
+<meta property="og:title" content="30 triệu mỗi tháng từ tài sản cần khoảng 6 tỷ (giả định 6% một năm). Góp 10 triệu mỗi tháng thì mất khoảng 23 năm.">
+<meta property="og:description" content="30 triệu mỗi tháng từ tài sản cần khoảng 6 tỷ (giả định 6% một năm). Góp 10 triệu mỗi tháng thì mất khoảng 23 năm.">
+<meta property="og:image" content="https://hieuthinhvuong.github.io/chien-luoc/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kiến Tha Tích Sản: 30 triệu mỗi tháng cần khoảng 6 tỷ, góp 10 triệu mỗi tháng mất khoảng 23 năm, phép tính giả định">
+<meta name="theme-color" content="#2A1C12">
+<link rel="icon" href="data:,">
+<link rel="preload" as="image" href="sep.webp">
+<script>document.documentElement.className+=" js";</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:22px;line-height:1.55;color:#2A1C12;background:#FFF3D9;padding-bottom:132px}
+img{max-width:100%}
+.w{max-width:760px;margin:0 auto;padding:0 18px}
+p,ul,ol,table,.box{margin-top:16px}
+h1,h2,h3{line-height:1.2;font-weight:800;letter-spacing:-.01em}
+h1{font-size:40px}
+h2{font-size:36px;margin-bottom:4px}
+h3{font-size:28px}
+section{padding:44px 0;border-top:1px solid #e6cf9f}
+b,strong{font-weight:800}
+.hl{background:linear-gradient(transparent 58%,#f6cf86 58%);padding:0 2px}
+/* màn đầu */
+.top{background:#2A1C12;color:#FFF3D9;padding:0 0 40px;border:0;overflow:hidden}
+.hero{display:block}
+.hero-anh{position:relative;margin:0 -18px;height:300px;overflow:hidden;background:#3a2a1c}
+.hero-anh img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 28%}
+.hero-anh:after{content:"";position:absolute;left:0;right:0;bottom:0;height:55%;background:linear-gradient(transparent,rgba(42,28,18,.92))}
+.logo{position:absolute;left:14px;top:12px;z-index:2;width:150px;height:auto;background:rgba(42,28,18,.72);border-radius:10px;padding:6px 8px}
+.ten{position:absolute;left:18px;right:18px;bottom:14px;z-index:2;color:#FFF3D9}
+.ten small{display:block;font-size:16px;font-weight:700;letter-spacing:.08em;color:#E9A23B}
+.ten strong{display:block;font-size:38px;line-height:1.1}
+.kick{margin-top:22px;font-size:16px;letter-spacing:.06em;font-weight:700;color:#E9A23B}
+.top h1{margin-top:8px;color:#FFF3D9}
+.top p{font-size:22px}
+.mo{color:#f3e2bf}
+.btn{display:block;width:100%;text-align:center;text-decoration:none;font-weight:800;font-size:22px;line-height:1.25;padding:18px 14px;min-height:62px;border-radius:16px;margin-top:16px}
+.b1{background:#E9A23B;color:#2A1C12;box-shadow:0 6px 0 #b8771f}
+.b2{background:transparent;color:#FFF3D9;border:2px solid #FFF3D9;padding:16px 12px}
+.lt .b2,.sang .b2{color:#2A1C12;border-color:#2A1C12}
+.btn:active{transform:translateY(2px);box-shadow:none}
+.so{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
+.o{border-radius:16px;padding:16px 14px;background:#E9A23B;color:#2A1C12}
+.o.o2{background:#FFF3D9}
+.o b{display:block;font-size:clamp(34px,10.5vw,52px);line-height:1;letter-spacing:-.02em;white-space:nowrap}
+.o span{display:block;font-size:18px;font-weight:700;margin-top:6px;line-height:1.3}
+.cau-so{font-size:20px!important;color:#e9d6ae}
+.cau-so b{color:#FFF3D9}
+.gt{font-size:19px!important;color:#cdb895}
+/* khối Tôi là Hiếu */
+.nhan{font-size:18px;font-weight:800;letter-spacing:.06em;color:#9a5b12}
+.the{display:grid;gap:14px;margin-top:20px}
+.t{background:#fff;border:1px solid #e0c58a;border-left:8px solid #E9A23B;border-radius:14px;padding:16px 16px 14px}
+.t h3{font-size:24px}
+.t p{margin-top:6px}
+.t.nen{border-left-color:#2A1C12;background:#fff8e8}
+.t.rr{border-left-color:#a33a1a}
+.t .phap{font-size:19px;color:#5a4332;margin-top:10px}
+/* bằng chứng */
+.chung{background:#2A1C12;color:#FFF3D9;border:0}
+.chung h2{color:#E9A23B}
+.anh-tus{display:block;width:100%;height:auto;border-radius:16px;margin-top:18px;border:3px solid #E9A23B}
+.chot{font-size:24px;font-weight:800;border-left:6px solid #E9A23B;padding-left:14px}
+.chung .note{color:#cdb895}
+.tb{width:100%;border-collapse:collapse;font-size:18px;background:#fff;border:1px solid #e0c58a;border-radius:12px;overflow:hidden}
+.tb th,.tb td{padding:11px 5px;white-space:nowrap;text-align:center;border-bottom:1px solid #efdcb0}
+.tb th{background:#2A1C12;color:#FFF3D9;font-size:16px;line-height:1.25;white-space:normal}
+.tb td:first-child,.tb th:first-child{text-align:left;font-weight:700;padding-left:10px}
+.tb tbody tr:nth-child(2) td{background:#fbe6bb;font-weight:800}
+.tb tr:last-child td{border-bottom:0}
+.note{font-size:19px;color:#5a4332}
+ol.n{list-style:none;counter-reset:n}
+ol.n li{counter-increment:n;position:relative;padding-left:56px;margin-top:14px;min-height:42px}
+ol.n li:before{content:counter(n);position:absolute;left:0;top:0;width:42px;height:42px;border-radius:50%;background:#E9A23B;color:#2A1C12;font-weight:800;text-align:center;line-height:42px}
+.img{display:block;width:100%;height:auto;border-radius:16px;margin-top:18px;border:1px solid #e0c58a}
+.q{font-weight:800;margin-top:22px}
+.q+p{margin-top:4px}
+.sub{margin-top:34px}
+/* máy tính */
+.calc{background:#2A1C12;color:#FFF3D9;border-radius:18px;padding:22px 16px;margin-top:24px}
+.calc h3{color:#E9A23B}
+.calc label,.calc .lb{display:block;margin-top:18px;font-weight:700;font-size:20px}
+.gop-v{display:block;font-size:44px;font-weight:800;color:#E9A23B;line-height:1.1;margin-top:4px}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:44px;background:transparent;margin-top:4px;touch-action:pan-y}
+input[type=range]::-webkit-slider-runnable-track{height:12px;border-radius:6px;background:linear-gradient(90deg,#E9A23B var(--p,18%),#5a4332 var(--p,18%))}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:40px;height:40px;border-radius:50%;background:#FFF3D9;border:4px solid #E9A23B;margin-top:-14px}
+input[type=range]::-moz-range-track{height:12px;border-radius:6px;background:#5a4332}
+input[type=range]::-moz-range-progress{height:12px;border-radius:6px;background:#E9A23B}
+input[type=range]::-moz-range-thumb{width:34px;height:34px;border-radius:50%;background:#FFF3D9;border:4px solid #E9A23B}
+.thang{display:flex;justify-content:space-between;font-size:16px;color:#cdb895}
+.seg{display:flex;gap:8px;margin-top:8px}
+.seg button{flex:1;font:inherit;font-weight:800;font-size:20px;min-height:56px;border-radius:12px;border:2px solid #E9A23B;background:transparent;color:#FFF3D9;cursor:pointer}
+.seg button[aria-pressed=true]{background:#E9A23B;color:#2A1C12}
+.res{margin-top:22px;background:#FFF3D9;color:#2A1C12;border-radius:14px;padding:14px 14px 16px}
+.res div{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:8px 0;border-bottom:1px solid #e6cf9f;font-size:20px}
+.res div:last-of-type{border:0}
+.res b{font-size:32px;white-space:nowrap}
+.res .gd{display:block;margin-top:10px;font-size:18px;font-weight:700;color:#7a2a12}
+.res .ghi{display:block;font-size:17px;color:#5a4332;margin-top:4px}
+.res .tiep{display:block;margin-top:12px;font-size:19px;color:#2A1C12}
+.calc .btn{margin-top:18px}
+/* khan hiếm thật */
+.lich{margin-top:22px;background:#FFF3D9;color:#2A1C12;border-radius:16px;padding:16px;border:3px dashed #E9A23B}
+.lich b{display:block;font-size:26px;line-height:1.2}
+.lich p{margin-top:8px;font-size:21px}
+.foot{background:#2A1C12;color:#FFF3D9;border:0}
+.foot h2{color:#E9A23B}
+.foot p{font-size:22px}
+.khai-loi-ich{font-size:19px;color:#5a4332;border-left:4px solid #E9A23B;padding-left:12px}
+.mt{background:#2A1C12;color:#cdb895;font-size:18px;padding:22px 0 30px;line-height:1.5}
+.mt a{color:#E9A23B}
+/* thanh nổi */
+.zl{position:fixed;left:0;right:0;bottom:0;z-index:9;background:#2A1C12;padding:6px 10px calc(10px + env(safe-area-inset-bottom));border-top:3px solid #E9A23B;display:none}
+.zl .dl{display:block;text-align:center;color:#E9A23B;font-size:16px;font-weight:700;line-height:1.3;margin:0 0 6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.zl .hang{display:flex;gap:10px}
+.zl a{margin:0;flex:1;min-height:56px;padding:14px 6px;font-size:20px}
+.zl .b1{box-shadow:none}
+.zl .b2{padding:12px 6px}
+/* hiệu ứng */
+@keyframes nhip{0%,64%,100%{transform:scale(1);box-shadow:0 6px 0 #b8771f,0 0 0 0 rgba(233,162,59,0)}72%{transform:scale(1.035);box-shadow:0 6px 0 #b8771f,0 0 0 0 rgba(233,162,59,.75)}88%{transform:scale(1);box-shadow:0 6px 0 #b8771f,0 0 0 16px rgba(233,162,59,0)}}
+.nhip{animation:nhip 4.5s ease-out infinite}
+.zl .nhip{animation-name:nhip2}
+@keyframes nhip2{0%,64%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(233,162,59,0)}72%{transform:scale(1.035);box-shadow:0 0 0 0 rgba(233,162,59,.75)}88%{transform:scale(1);box-shadow:0 0 0 14px rgba(233,162,59,0)}}
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .zl{transition:none}.nhip,.zl .nhip{animation:none}.js .rv{opacity:1;transform:none;transition:none}}
+@media(max-width:380px){body{font-size:22px}h1{font-size:37px}h2{font-size:36px}.tb{font-size:16px}.tb th,.tb td{padding:10px 3px}.tb th{font-size:14px}.ten strong{font-size:34px}.zl a{font-size:18px}}
+@media(max-width:768px){.zl{display:block}.kick{display:none}.top h1{margin-top:22px}.js .zl{transform:translateY(110%);transition:transform .3s ease}.js .zl.hien{transform:none}}
+@media(min-width:769px){
+  body{padding-bottom:0;font-size:22px}
+  .w{max-width:1080px;padding:0 32px}
+  section>.w{max-width:820px}
+  .top{padding:40px 0 56px}
+  .top>.w{max-width:1120px}
+  .kick{font-size:15px;letter-spacing:.04em}
+  .hero{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+  .hero-anh{order:2;margin:0;height:auto;aspect-ratio:4/5;border-radius:24px;border:4px solid #E9A23B}
+  .hero-chu{order:1}
+  h1{font-size:56px}
+  h2{font-size:42px}
+  .btn{max-width:440px}
+  .hero-chu .btn{display:inline-block;width:auto;min-width:280px;margin-right:12px}
+  .the{grid-template-columns:1fr 1fr}
+  #g .img{max-width:520px;margin-left:auto;margin-right:auto}
+  .chung .w{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;max-width:1000px}
+}
+:focus-visible{outline:3px solid #E9A23B;outline-offset:2px}
+</style>
+</head>
+<body>
+
+<section class="top" id="a">
+<div class="w hero">
+<div class="hero-anh">
+<img src="sep.webp" width="720" height="640" alt="Hiếu Thịnh Vượng, áo sơ mi xanh nhạt, ngồi ở bàn ngoài trời" fetchpriority="high">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1299 398" class="logo" role="img" aria-label="Kiến Tha Tích Sản"><title>Kiến Tha Tích Sản</title><g transform="translate(28.56,-64.23) scale(0.98432)"><g><g stroke="#FFF3D9" stroke-linecap="round" stroke-linejoin="round" fill="none"><polyline stroke-width="30" points="214,286 170,318 146,384"/><polyline stroke-width="30" points="238,292 232,336 214,390"/><polyline stroke-width="30" points="260,286 302,316 322,380"/><path stroke-width="26" d="M336,228 Q346,180 396,170"/></g><ellipse cx="112" cy="276" rx="76" ry="58" fill="#FFF3D9"/><ellipse cx="238" cy="272" rx="42" ry="32" fill="#FFF3D9"/><circle cx="326" cy="256" r="38" fill="#FFF3D9"/><rect x="376.0" y="228.0" width="80" height="80" rx="14.0" fill="#E9A23B"/></g></g><path d="M543.05 219.86V115.86H570.03V157.46L601.93 115.86H634.54L594.49 165.47L635.8 219.86H601.93L570.03 176.43V219.86Z M648.45 219.86V115.86H675.44V219.86Z M769.46 89.3 750.77 89.16 761.59 64H785.48ZM702 107.57 720.97 85.22H741.63L760.6 107.57H740.79L731.37 96.18L721.82 107.57ZM693.71 219.86V115.86H769.04V139.19H720.69V156.05H762.71V178.26H720.69V196.53H769.74V219.86Z M787.31 219.86V115.86H812.18L850.55 173.62V115.86H877.25V219.86H852.1L814.01 165.05V219.86Z " fill="#E9A23B"/><path d="M955.82 219.86V139.19H924.33V115.86H1014.28V139.19H982.8V219.86Z M1029.04 219.86V115.86H1056.02V154.93H1090.31V115.86H1117.3V219.86H1090.31V177.98H1056.02V219.86Z M1129.95 219.86 1164.52 115.86H1200.92L1235.49 219.86H1207.38L1201.9 202.43H1163.53L1158.05 219.86ZM1170.7 179.38H1194.73L1182.79 141.02Z" fill="#FFF3D9"/><path d="M742.69 305.91V275.61H731.34V268.91H761.74V275.61H750.39V305.91Z M784.99 265.26 779.39 265.21 783.39 256.21H790.49ZM778.29 305.91V268.91H785.99V305.91Z M820.94 306.41Q816.34 306.41 812.92 304.78Q809.49 303.16 807.19 300.43Q804.89 297.71 803.74 294.31Q802.59 290.91 802.59 287.36Q802.59 283.86 803.74 280.46Q804.89 277.06 807.19 274.33Q809.49 271.61 812.92 270.01Q816.34 268.41 820.94 268.41Q824.79 268.41 827.52 269.38Q830.24 270.36 832.07 271.88Q833.89 273.41 835.02 275.13Q836.14 276.86 836.69 278.38Q837.24 279.91 837.42 280.88Q837.59 281.86 837.59 281.86H829.94Q829.94 281.86 829.77 281.18Q829.59 280.51 829.09 279.53Q828.59 278.56 827.62 277.61Q826.64 276.66 825.02 275.98Q823.39 275.31 820.99 275.31Q817.54 275.31 815.22 277.08Q812.89 278.86 811.72 281.61Q810.54 284.36 810.54 287.36Q810.54 290.36 811.72 293.13Q812.89 295.91 815.22 297.68Q817.54 299.46 820.99 299.46Q823.39 299.46 825.02 298.81Q826.64 298.16 827.62 297.18Q828.59 296.21 829.09 295.23Q829.59 294.26 829.77 293.61Q829.94 292.96 829.94 292.96H837.59Q837.59 292.96 837.42 293.93Q837.24 294.91 836.69 296.43Q836.14 297.96 835.02 299.68Q833.89 301.41 832.07 302.93Q830.24 304.46 827.52 305.43Q824.79 306.41 820.94 306.41Z M853.99 305.91V268.91H861.69V283.66H876.09V268.91H883.79V305.91H876.09V290.36H861.69V305.91Z  M937.89 306.41Q934.29 306.41 931.77 305.53Q929.24 304.66 927.57 303.28Q925.89 301.91 924.89 300.38Q923.89 298.86 923.42 297.48Q922.94 296.11 922.82 295.23Q922.69 294.36 922.69 294.36H930.49Q930.49 294.36 930.72 295.21Q930.94 296.06 931.69 297.18Q932.44 298.31 933.99 299.13Q935.54 299.96 938.19 299.96Q941.44 299.96 942.99 298.58Q944.54 297.21 944.54 295.31Q944.54 293.61 943.37 292.61Q942.19 291.61 939.74 291.11L934.79 290.16Q931.79 289.61 929.22 288.41Q926.64 287.21 925.04 285.08Q923.44 282.96 923.44 279.61Q923.44 276.21 925.14 273.68Q926.84 271.16 929.92 269.78Q932.99 268.41 937.14 268.41Q941.04 268.41 943.62 269.53Q946.19 270.66 947.72 272.28Q949.24 273.91 949.97 275.56Q950.69 277.21 950.92 278.31Q951.14 279.41 951.14 279.41H943.54Q943.54 279.41 943.37 278.71Q943.19 278.01 942.54 277.11Q941.89 276.21 940.57 275.51Q939.24 274.81 936.94 274.81Q933.79 274.81 932.39 276.18Q930.99 277.56 930.99 279.16Q930.99 280.81 932.39 281.71Q933.79 282.61 936.04 283.06L941.29 284.11Q944.29 284.66 946.79 285.96Q949.29 287.26 950.77 289.43Q952.24 291.61 952.24 294.81Q952.24 298.11 950.59 300.73Q948.94 303.36 945.74 304.88Q942.54 306.41 937.89 306.41Z M980.79 265.81V264.16Q980.79 263.51 981.07 262.93Q981.34 262.36 982.04 262.06L982.79 261.66Q983.84 261.11 984.39 260.58Q984.94 260.06 984.94 259.31Q984.94 258.66 984.47 258.16Q983.99 257.66 983.09 257.66Q982.19 257.66 981.77 258.11Q981.34 258.56 981.24 259.06Q981.14 259.56 981.14 259.66H976.79Q976.74 258.31 977.37 256.98Q977.99 255.66 979.39 254.76Q980.79 253.86 983.04 253.86Q986.04 253.86 987.79 255.43Q989.54 257.01 989.54 259.11Q989.54 260.91 988.37 262.13Q987.19 263.36 985.39 264.26L985.14 264.41V265.81ZM965.19 305.91 977.79 268.91H988.04L1000.64 305.91H992.54L990.14 298.66H975.69L973.29 305.91ZM977.79 291.96H988.04L982.94 276.51Z M1016.54 305.91V268.91H1023.59L1039.54 292.51V268.91H1047.19V305.91H1040.04L1024.19 282.96V305.91Z" fill="#E9A23B"/><rect x="547.0" y="283.9" width="156.8" height="7" rx="3.5" fill="#E9A23B"/><rect x="1074.7" y="283.9" width="156.8" height="7" rx="3.5" fill="#E9A23B"/></svg>
+<p class="ten"><small>NGƯỜI VIẾT TRANG NÀY</small><strong>Hiếu Thịnh Vượng</strong></p>
+</div>
+<div class="hero-chu">
+<p class="kick">CHIẾN LƯỢC TÀI SẢN, DO HIẾU THỊNH VƯỢNG VIẾT</p>
+<h1>Lương 10 đến 30 triệu, bao giờ mới có tài sản riêng?</h1>
+<p class="mo">Lương về đủ tiêu, dư không bao nhiêu, giá cả năm nào cũng tăng. Tôi tính sẵn từng con số để bạn biết mình đang đứng ở đâu.</p>
+<a class="btn b1 nhip" href="https://zalo.me/g/0wvtbqshpbos7angvmtq" target="_blank" rel="noopener">Vào nhóm Kiến Tha Tích Sản</a>
+<a class="btn b2" href="https://zalo.me/84373238526" target="_blank" rel="noopener">Nhắn Zalo cho Hiếu</a>
+<div class="so" aria-hidden="true">
+<div class="o"><b data-dem="6" data-duoi=" tỷ">6 tỷ</b><span>tài sản cần có để rút 30 triệu mỗi tháng</span></div>
+<div class="o o2"><b data-dem="23" data-duoi=" năm">23 năm</b><span>nếu góp 10 triệu mỗi tháng, giả định 6% một năm</span></div>
+</div>
+<p class="cau-so">30 triệu mỗi tháng từ tài sản cần khoảng <b>6 tỷ</b> (giả định 6% một năm). Góp 10 triệu mỗi tháng thì mất khoảng <b>23 năm</b>.</p>
+<p class="gt">Muốn rút 30 đến 100 triệu mỗi tháng từ tài sản thì cần bao nhiêu tiền, nếu giả định tài sản tăng 4 đến 8% một năm? Tôi tính ra từng con số, kèm 3 cách bắt đầu từ tiền lương. Đây là phép tính giả định, không phải khả năng bạn sẽ đạt.</p>
+</div>
+</div>
+</section>
+
+<section id="h">
+<div class="w rv">
+<p class="nhan">NGƯỜI VIẾT</p>
+<h2>Tôi là Hiếu</h2>
+<p>Tôi làm kênh Hiếu Thịnh Vượng. Đây là cách tôi chia tiền của chính mình.</p>
+<div class="khoi-dau-tu the">
+<div class="t nen"><h3>Vàng vật chất: phần nền</h3><p>Nền tài sản của tôi là vàng vật chất, giữ theo chu kỳ năm và mua thêm đều từng đợt; giá vàng có thể đi ngang hoặc giảm nhiều năm.</p></div>
+<div class="t"><h3>Cổ phiếu và Bitcoin</h3><p>Tôi có thêm cổ phiếu và một khoản nhỏ Bitcoin. Trang này không giới thiệu sàn hay dịch vụ nào về Bitcoin. Cổ phiếu có năm giảm sâu; Bitcoin giảm khoảng 64% trong năm 2022 (CoinMarketCap).</p></div>
+<div class="t rr"><h3>Vàng chỉ số: phần vốn nhỏ</h3><p>Một phần vốn nhỏ tôi giao dịch vàng chỉ số. Giao dịch này dùng đòn bẩy, có thể mất cả phần vốn đó, và có tháng tôi không có lãi.</p><p class="phap">Việt Nam chưa có khung pháp lý cho sàn vàng chỉ số hay CFD nước ngoài. Ai giao dịch thì tự tìm hiểu và tự chịu trách nhiệm.</p></div>
+<div class="t nen"><h3>Lãi đi về đâu</h3><p>Phần lãi nếu có, tôi rút về mua thêm vàng vật chất. Có tháng không có lãi để rút.</p></div>
+</div>
+<p>Khi giá đi ngang vài năm, tôi coi đó là dịp gom được nhiều hơn. Với cộng đồng, tôi đặt mục tiêu cố gắng mỗi tuần 1 chỉ; mỗi người có sức khác nhau, nấc của bạn là nấc bạn giữ được (xem Chiến lược 1).</p>
+<p>Tôi không công bố lãi lỗ cá nhân. Đó là cách tôi làm, không phải khuyến nghị cho bạn.</p>
+<p class="khai-loi-ich">Cộng đồng của tôi có doanh thu từ hoạt động giao dịch của thành viên ở bước sau. Trang này và nhóm miễn phí, không yêu cầu bạn mở tài khoản hay nạp tiền.</p>
+</div>
+</section>
+
+<section id="bang-chung" class="chung">
+<div class="w rv">
+<div>
+<p class="nhan" style="color:#E9A23B">BẰNG CHỨNG THẬT</p>
+<h2>Một ngày nhận định (22/10)</h2>
+<p>Sáng 22/10, lúc 10:02, tôi ghi mốc giá trong bài sáng đăng ở các nhóm Zalo khác của tôi. Tối cùng ngày tôi đăng bài này lên trang cá nhân, ảnh chụp lại nguyên văn.</p>
+<p class="chot">Có ngày đúng, có ngày sai. Tôi chọn đưa ngày này lên vì nó đúng.</p>
+<p class="note">Mốc trong ảnh là của ngày 22/10, không dùng cho hôm nay.</p>
+<p class="note">Ảnh chụp một bài đăng. Mốc giá là nhận định của tôi cho ngày đó, không phải lời khuyên mua bán, và kết quả quá khứ không cho biết ngày mai.</p>
+</div>
+<img class="anh-tus" src="tus-2210.webp" width="720" height="732" loading="lazy" alt="Ảnh chụp bài đăng tối 22/10: Đúng như nhận định sáng nay. Sáng nay tôi viết trong nhóm: thủng 4.100$ thì giá có thể về 4.075$. Trong ngày vàng gãy 4.100$ và đã rơi xuống 4.064$, thủng luôn cả mốc 4.075$. Ai theo dõi nhóm đã có kế hoạch từ sáng nên không bị bất ngờ.">
+</div>
+</section>
+
+<section id="b">
+<div class="w rv">
+<h2>Chiến lược 1: mua vàng đều theo số tiền mỗi tháng</h2>
+<p>Dành cho người lương 10 đến 30 triệu, đã có quỹ dự phòng (tiền riêng phòng khi ốm, mất việc). Ba nấc theo số tiền: 5 triệu, 10 triệu hoặc 15 triệu mỗi tháng, tương ứng khoảng 0,35 chỉ, 0,7 chỉ và 1,05 chỉ theo giá 142,3 triệu một lượng ngày 22/10. Giá đổi mỗi ngày. Chọn nấc nhỏ hơn số tiền bạn dư sau chi tiêu; lương 10 triệu thì nấc 5 triệu đã là một nửa lương.</p>
+<p>Một cách làm: mua cùng ngày mỗi kỳ, lấy hóa đơn, cất có khóa, giữ lịch kể cả khi giá đi ngang hoặc giảm. Cách này không bảo đảm có lãi.</p>
+<p>Từ 16/10/2026, mua vàng từ 5 triệu đồng trong ngày phải thanh toán không dùng tiền mặt.</p>
+<p>Rủi ro: giá có thể đi ngang hoặc giảm nhiều năm, và mỗi lần mua bạn trả chênh mua bán.</p>
+</div>
+</section>
+
+<section id="c">
+<div class="w rv">
+<h2>Góp đều mỗi tháng, bao lâu đến 6, 10, 20 tỷ?</h2>
+<p>Giả định tổng giá trị tài sản tăng 6% một năm, tiền lãi cộng dồn mỗi tháng, bắt đầu từ 0. Đây là số để tính, không phải mức của vàng hay của thứ gì cụ thể, và không phải mức bạn sẽ gặp. Vàng không trả lãi.</p>
+<table class="tb" id="bang-chinh">
+<thead><tr><th>Góp mỗi tháng</th><th>Đến 6 tỷ</th><th>Đến 10 tỷ</th><th>Đến 20 tỷ</th></tr></thead>
+<tbody>
+<tr><td>5 triệu</td><td data-dem="32.5">32,5 năm</td><td data-dem="40.1">40,1 năm</td><td data-dem="50.9">50,9 năm</td></tr>
+<tr><td>10 triệu</td><td data-dem="23.2">23,2 năm</td><td data-dem="29.9">29,9 năm</td><td data-dem="40.1">40,1 năm</td></tr>
+<tr><td>20 triệu</td><td data-dem="15.3">15,3 năm</td><td data-dem="20.9">20,9 năm</td><td data-dem="29.9">29,9 năm</td></tr>
+</tbody>
+</table>
+<p>Giữ đích 6 tỷ, góp 10 triệu: mức 4% cần 27,5 năm, mức 8% cần 20,2 năm. Máy tính dưới đổi đích theo mức sinh lời.</p>
+<p>Giá cả 9 tháng đầu 2026 cao hơn cùng kỳ 4,52% (Cục Thống kê, công bố 03/10). Giữ mức đó 20 năm, 30 triệu lúc ấy mua được bằng khoảng 12,4 triệu hôm nay.</p>
+</div>
+</section>
+
+<section id="d">
+<div class="w rv">
+<h2>Chiến lược 2: tăng tiền góp</h2>
+<p>Dành cho người 25 đến 40 tuổi, góp dưới 10 triệu mỗi tháng.</p>
+<p>Một cách làm: ghi chi tiêu một tháng để biết mình dư bao nhiêu; mỗi lần tăng lương hoặc có thưởng, chuyển một nửa phần tăng vào khoản góp; đặt chuyển tự động đúng ngày nhận lương; chọn nấc 5, 10 hoặc 20 triệu mà bạn giữ được.</p>
+<p>Rủi ro: góp quá sức thì dễ bỏ giữa chừng, nên chọn nấc bạn giữ được. Khoản góp bỏ vào đâu là bạn tự quyết.</p>
+<h2 class="sub">Chiến lược 3: chia tiền thành hai ngăn</h2>
+<p>Dành cho người có khoảng 300 triệu trở lên, hoặc thu nhập từ 30 triệu mỗi tháng.</p>
+<p>Ngưỡng 300 triệu là ước lượng của tôi để chia nhóm đọc, không phải chuẩn của ai. Ngăn 1 là quỹ dự phòng, mức thường được nhắc là 3 đến 6 tháng chi tiêu, gửi tiết kiệm để có việc không phải bán tài sản vội. Ngăn 2 là tài sản giữ dài hạn, gồm những thứ bạn đã tự tìm hiểu kỹ.</p>
+<p>Rủi ro: mỗi thứ có rủi ro riêng, chia ra nhiều thứ không làm rủi ro biến mất.</p>
+</div>
+</section>
+
+<section id="e">
+<div class="w rv">
+<h2>30, 50, 100 triệu mỗi tháng cần bao nhiêu tài sản?</h2>
+<p>Phép chia đơn giản: số tiền mỗi tháng nhân 12, chia cho mức sinh lời một năm. Tôi lấy ba mức giả định 4%, 6%, 8% để bạn thấy khoảng cách.</p>
+<table class="tb">
+<thead><tr><th>Mỗi tháng</th><th>Mức 4%</th><th>Mức 6%</th><th>Mức 8%</th></tr></thead>
+<tbody>
+<tr><td>30 triệu</td><td>9 tỷ</td><td>6 tỷ</td><td>4,5 tỷ</td></tr>
+<tr><td>50 triệu</td><td>15 tỷ</td><td>10 tỷ</td><td>7,5 tỷ</td></tr>
+<tr><td>100 triệu</td><td>30 tỷ</td><td>20 tỷ</td><td>15 tỷ</td></tr>
+</tbody>
+</table>
+<p>Tiền danh nghĩa, chưa trừ lạm phát. Ngoài đời, mức sinh lời lên xuống từng năm và có năm âm. Muốn nhận tiền mỗi tháng thì phải có tài sản trả lãi hoặc bán bớt tài sản.</p>
+<p>Vàng không trả lãi. Muốn có tiền hằng tháng từ vàng là bán dần, và giá lúc bán có thể thấp hơn lúc mua. Số trong bảng là số giả định để tính.</p>
+
+<div class="calc" id="may-tinh">
+<h3>Tính theo số của bạn</h3>
+<label for="gop">Bạn góp mỗi tháng (kéo thanh)</label>
+<output class="gop-v" id="gop-v" for="gop">10 triệu</output>
+<input id="gop" type="range" min="1" max="50" step="1" value="10" aria-describedby="gop-v">
+<div class="thang" aria-hidden="true"><span>1 triệu</span><span>50 triệu</span></div>
+<div class="seg" id="seg-gop" role="group" aria-label="Chọn nhanh tiền góp">
+<button type="button" data-v="5" aria-pressed="false">5 triệu</button>
+<button type="button" data-v="10" aria-pressed="true">10 triệu</button>
+<button type="button" data-v="20" aria-pressed="false">20 triệu</button>
+</div>
+<span class="lb" id="l-ts">Mức sinh lời giả định một năm</span>
+<div class="seg" id="seg-ts" role="group" aria-labelledby="l-ts">
+<button type="button" data-v="4" aria-pressed="false">4%</button>
+<button type="button" data-v="6" aria-pressed="true">6%</button>
+<button type="button" data-v="8" aria-pressed="false">8%</button>
+</div>
+<span class="lb" id="l-mt">Muốn nhận mỗi tháng</span>
+<div class="seg" id="seg-mt" role="group" aria-labelledby="l-mt">
+<button type="button" data-v="30" aria-pressed="true">30 triệu</button>
+<button type="button" data-v="50" aria-pressed="false">50 triệu</button>
+<button type="button" data-v="100" aria-pressed="false">100 triệu</button>
+</div>
+<div class="res" aria-live="polite">
+<div><span>Tài sản cần có</span><b id="r-ts">6 tỷ</b></div>
+<div><span>Số năm góp đủ</span><b id="r-nam">23,2 năm</b></div>
+<span class="gd">Phép tính giả định, không phải dự báo hay cam kết.</span>
+<span class="ghi">Góp cuối mỗi tháng, lãi cộng dồn mỗi tháng, bắt đầu từ 0, tiền danh nghĩa.</span>
+<span class="tiep">Bắt đầu từ nấc nhỏ nhất bạn giữ được.</span>
+</div>
+<a class="btn b1" href="https://zalo.me/g/0wvtbqshpbos7angvmtq" target="_blank" rel="noopener">Vào nhóm Kiến Tha Tích Sản</a>
+</div>
+</div>
+</section>
+
+<section id="f" class="lt">
+<div class="w rv">
+<h2>Vào nhóm Kiến Tha Tích Sản | Vàng nhận gì</h2>
+<p>Nhóm Zalo miễn phí, có sẵn:</p>
+<ol class="n">
+
+<li>Giá vàng các sáng ngày làm việc, kèm giờ cập nhật và mốc theo dõi.</li>
+<li>Lịch tin lớn, vào tuần nào có tin lớn.</li>
+</ol>
+<a class="btn b1" href="https://zalo.me/g/0wvtbqshpbos7angvmtq" target="_blank" rel="noopener">Vào nhóm Kiến Tha Tích Sản</a>
+</div>
+</section>
+
+<section id="g">
+<div class="w rv">
+<h2>3 bước vào nhóm</h2>
+<ol class="n">
+<li>Bấm nút Vào nhóm Kiến Tha Tích Sản.</li>
+<li>Bấm mở ứng dụng Zalo.</li>
+<li>Bấm Tham gia (hoặc Xin vào nhóm).</li>
+</ol>
+<p>Nhóm có duyệt thành viên. Thấy Xin vào nhóm thì nhóm duyệt trong ngày làm việc.</p>
+<p>Đang xem trong Facebook hoặc TikTok mà nút không mở? Bấm dấu ba chấm ở góc trên, chọn Mở bằng trình duyệt (Chrome hoặc Safari), rồi bấm lại nút.</p>
+</div>
+</section>
+
+<section id="i">
+<div class="w rv">
+<h2>Hỏi nhanh</h2>
+<p class="q">Vào nhóm có mất phí không?</p>
+<p>Không. Nhóm miễn phí, vào nhóm không cần nạp tiền hay mở tài khoản ở đâu.</p>
+<p class="q">Chỉ có 5 triệu thì sao?</p>
+<p>Bắt đầu từ nấc nhỏ nhất bạn giữ được (xem Chiến lược 1).</p>
+<p class="q">Trang hứa tôi có 30 đến 100 triệu không?</p>
+<p>Không. Tài sản nào cũng có thể đi ngang hoặc giảm.</p>
+<p class="q">Người lạ nhắn riêng mời nạp tiền?</p>
+<p>Chưa bấm link, chưa chuyển tiền. Hỏi lại tôi hoặc trong nhóm.</p>
+<p class="q">Nút không mở được?</p>
+<p>Mở bằng trình duyệt ngoài, xem bước ở trên.</p>
+</div>
+</section>
+
+<section id="j" class="foot">
+<div class="w rv">
+<h2>Vào nhóm trước, hỏi tiếp sau.</h2>
+<p>Nhóm miễn phí. Muốn hỏi cách dùng bảng tính thì nhắn Zalo cho tôi.</p>
+<div class="lich">
+<b>Tối Chủ nhật, nhóm đăng lịch tin lớn của tuần tới (vào tuần nào có tin lớn).</b>
+</div>
+<a class="btn b1 nhip" href="https://zalo.me/g/0wvtbqshpbos7angvmtq" target="_blank" rel="noopener">Vào nhóm Kiến Tha Tích Sản</a>
+<a class="btn b2" href="https://zalo.me/84373238526" target="_blank" rel="noopener">Nhắn Zalo cho Hiếu</a>
+</div>
+</section>
+
+<section id="k" class="mt">
+<div class="w">
+<p style="margin-top:0">Nội dung mang tính giáo dục, không phải lời khuyên đầu tư. Các bảng dùng mức tăng giả định, không phải dự báo (cập nhật ngày 23/10). Giá vàng và mọi tài sản có thể giảm.</p>
+<p><a href="chinh-sach.html">Chính sách trang và dữ liệu khi bạn nhắn Zalo</a></p>
+</div>
+</section>
+
+<div class="zl">
+<span class="dl">Lịch tin lớn đăng tối Chủ nhật</span>
+<div class="hang"><a class="btn b1 nhip" href="https://zalo.me/g/0wvtbqshpbos7angvmtq" target="_blank" rel="noopener">Vào nhóm</a><a class="btn b2" href="https://zalo.me/84373238526" target="_blank" rel="noopener">Nhắn Hiếu</a></div>
+</div>
+
+<script>
+(function(){
+  var st={gop:10,ts:6,mt:30};
+  function dp(x,n){return x.toFixed(n).replace(".",",");}
+  // Số năm góp đều C triệu mỗi tháng để đạt T triệu, lãi a (%/năm) cộng dồn mỗi tháng, góp cuối tháng, bắt đầu từ 0.
+  function soNam(C,T,a){var r=a/100/12;return Math.log(1+T*r/C)/Math.log(1+r)/12;}
+  function taiSan(mt,a){return mt*12/(a/100);} // triệu đồng
+  function tyStr(tr){var t=tr/1000;var s=(Math.round(t*10)/10);return (s%1===0?String(s):dp(s,1))+" tỷ";}
+  function tinh(){
+    var ts=taiSan(st.mt,st.ts);
+    document.getElementById("r-ts").textContent=tyStr(ts);
+    var el=document.getElementById("r-nam");
+    if(!(st.gop>0)){el.textContent="kéo chọn số tiền góp";return;}
+    var n=soNam(st.gop,ts,st.ts);
+    el.textContent=(n>100)?"hơn 100 năm":dp(n,1)+" năm";
+  }
+  window.__ktTinh={soNam:soNam,taiSan:taiSan,tyStr:tyStr,dp:dp,st:st};
+  var inp=document.getElementById("gop"),out=document.getElementById("gop-v");
+  function veThanh(){var p=(st.gop-inp.min)/(inp.max-inp.min)*100;inp.style.setProperty("--p",p+"%");out.textContent=st.gop+" triệu";}
+  function dongBo(v){var bs=document.querySelectorAll("#seg-gop button");for(var j=0;j<bs.length;j++)bs[j].setAttribute("aria-pressed",parseFloat(bs[j].getAttribute("data-v"))===v?"true":"false");}
+  function nhom(id,key,onchg){
+    var g=document.getElementById(id),bs=g.querySelectorAll("button");
+    for(var i=0;i<bs.length;i++)bs[i].addEventListener("click",function(){
+      st[key]=parseFloat(this.getAttribute("data-v"));
+      for(var j=0;j<bs.length;j++)bs[j].setAttribute("aria-pressed",bs[j]===this?"true":"false");
+      if(onchg)onchg(st[key]);tinh();
+    });
+  }
+  nhom("seg-gop","gop",function(v){inp.value=v;veThanh();});
+  nhom("seg-ts","ts");
+  nhom("seg-mt","mt");
+  inp.addEventListener("input",function(){var v=parseFloat(inp.value);st.gop=isNaN(v)?0:v;dongBo(st.gop);veThanh();tinh();});
+  veThanh();tinh();
+
+  // Hiệu ứng: hiện dần khi cuộn, số đếm chạy. Tắt khi máy đặt giảm chuyển động.
+  var tat=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function dem(el){
+    if(tat||el.__da)return;el.__da=1;
+    var dich=parseFloat(el.getAttribute("data-dem")),thap=(String(dich).indexOf(".")>-1)?1:0;
+    var duoi=el.getAttribute("data-duoi");if(duoi===null)duoi=" năm";
+    var t0=null,dai=1100;
+    function buoc(t){if(!t0)t0=t;var x=Math.min(1,(t-t0)/dai),e=1-Math.pow(1-x,3);
+      el.textContent=dp(dich*e,thap)+duoi;if(x<1)requestAnimationFrame(buoc);else el.textContent=dp(dich,thap)+duoi;}
+    requestAnimationFrame(buoc);
+  }
+  var zl=document.querySelector(".zl"),nutDau=document.querySelector(".hero-chu .b2");
+  if(zl&&nutDau&&("IntersectionObserver" in window)){
+    new IntersectionObserver(function(es){zl.classList.toggle("hien",!es[0].isIntersecting&&es[0].boundingClientRect.top<0);}).observe(nutDau);
+  }else if(zl){zl.className+=" hien";}
+  var rv=document.querySelectorAll(".rv"),so=document.querySelectorAll("[data-dem]");
+  function hetTrang(){if(innerHeight+(window.pageYOffset||0)>=document.documentElement.scrollHeight-60){for(var i=0;i<rv.length;i++)rv[i].classList.add("in");for(var j=0;j<so.length;j++)dem(so[j]);}}
+  window.addEventListener("scroll",hetTrang,{passive:true});
+  if(tat||!("IntersectionObserver" in window)){
+    for(var i=0;i<rv.length;i++)rv[i].className+=" in";
+    return;
+  }
+  var io=new IntersectionObserver(function(es){
+    for(var i=0;i<es.length;i++){if(!es[i].isIntersecting)continue;var el=es[i].target;
+      if(el.classList.contains("rv"))el.classList.add("in");
+      if(el.hasAttribute("data-dem"))dem(el);
+      io.unobserve(el);}
+  },{rootMargin:"0px 0px -8% 0px",threshold:0.12});
+  for(var i=0;i<rv.length;i++)io.observe(rv[i]);
+  for(var j=0;j<so.length;j++)io.observe(so[j]);
+})();
+</script>
+</body>
+</html>
