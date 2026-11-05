@@ -5,36 +5,50 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <meta name="referrer" content="no-referrer">
-<title>Đang vào nhóm Zalo chứng khoán</title>
-<noscript><meta http-equiv="refresh" content="0;url=https://zalo.me/g/kdsz84fv9isd4opixj2x"></noscript>
+<title>Nhóm Zalo chứng khoán Kiến Tha</title>
 <style>
-body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#0f1b2d;color:#f3efe6;font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;padding:24px}
-main{max-width:420px}
-h1{font-size:20px;margin:0 0 12px}
-a{color:#e8c46a}
-small{display:block;margin-top:24px;color:#a9b3c2;font-size:13px}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:#0f1b2d;color:#f3efe6;font:18px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;padding:20px 18px 24px}
+main{max-width:420px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+h1{font-size:26px;line-height:1.25;margin:4px 0 0}
+.phu{margin:0;color:#d5dbe6}
+ul{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+li{background:#17283f;border-radius:12px;padding:12px 14px;border-left:5px solid #e8c46a}
+li b{display:block;font-size:19px;color:#e8c46a}
+li span{display:block;font-size:18px}
+.nut{display:flex;align-items:center;justify-content:center;min-height:68px;margin-top:8px;background:#e8c46a;color:#0f1b2d;border-radius:14px;font-size:22px;font-weight:700;text-decoration:none;text-align:center;padding:10px 14px}
+.nut:active{background:#d9b455}
+small{display:block;color:#a9b3c2;font-size:15px;line-height:1.45;text-align:center}
 </style>
 </head>
 <body>
 <main>
-<h1>Đang chuyển bạn vào nhóm Zalo chứng khoán của Kiến Tha</h1>
-<p>Nếu trang không tự chuyển, <a id="nhom" href="https://zalo.me/g/kdsz84fv9isd4opixj2x">bấm vào đây</a>.</p>
-<small>Trang này chỉ cộng một lượt vào bộ đếm theo từng nơi đăng. Không lưu địa chỉ IP hay thông tin cá nhân.</small>
+<h1>Tìm hiểu chứng khoán, có chỗ để hỏi</h1>
+<p class="phu">Nhóm Zalo miễn phí cho người mới bắt đầu.</p>
+<ul>
+<li><b>Miễn phí</b><span>Vào nhóm không mất tiền.</span></li>
+<li><b>Có chỗ hỏi</b><span>Thắc mắc cứ nhắn trong nhóm, có người đọc và trả lời.</span></li>
+<li><b>Có nhận định để xem</b><span>Đọc để tham khảo, quyết định là của bạn.</span></li>
+</ul>
+<a class="nut" id="nut" href="https://zalo.me/g/kdsz84fv9isd4opixj2x" rel="noopener">Vào nhóm Zalo miễn phí</a>
+<small>Nội dung mang tính giáo dục, không phải lời khuyên đầu tư.</small>
 </main>
 <script>
 (function () {
-  var MA = "bl-zalo-ck";
-  var DICH = "https://zalo.me/g/kdsz84fv9isd4opixj2x";
-  var DEM = "https://209-97-173-35.sslip.io/v/";
-  var di = false;
-  function sang() { if (di) return; di = true; location.replace(DICH); }
-  setTimeout(sang, 1200);
+  var GOC = "bl-zalo-ck", KENH = "ck", DEM = "https://209-97-173-35.sslip.io/", ma = GOC;
   try {
-    fetch(DEM + MA, {
-      mode: "no-cors", cache: "no-store", keepalive: true,
-      credentials: "omit", referrerPolicy: "no-referrer"
-    }).then(sang, sang);
-  } catch (e) { sang(); }
+    var b = new URLSearchParams(location.search).get("b");
+    if (b && /^\d{4}-\d{1,2}$/.test(b)) ma = KENH + "-" + b;
+  } catch (e) {}
+  function dem(loai) {
+    try {
+      fetch(DEM + loai + "/" + ma, { mode: "no-cors", cache: "no-store", keepalive: true,
+        credentials: "omit", referrerPolicy: "no-referrer" }).catch(function () {});
+    } catch (e) {}
+  }
+  dem("t");
+  var nut = document.getElementById("nut");
+  nut.addEventListener("click", function () { dem("b"); });
 })();
 </script>
 </body>
