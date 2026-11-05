@@ -24,6 +24,10 @@ small{display:block;margin-top:24px;color:#a9b3c2;font-size:13px}
 <script>
 (function () {
   var MA = "bl-tg-indo-c";
+  try {
+    var b = new URLSearchParams(location.search).get("b");
+    if (b && /^\d{4}-\d{1,2}$/.test(b)) MA = "tgid-" + b;
+  } catch (e) {}
   var DICH = "https://t.me/rizky_mukmar_hp";
   var DEM = "https://209-97-173-35.sslip.io/v/";
   var di = false;
