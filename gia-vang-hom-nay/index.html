@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Giá vàng hôm nay: SJC, DOJI, nhẫn 9999 | Hiếu Thịnh Vượng</title>
-<meta name="description" content="Giá vàng miếng SJC, nhẫn 9999 hôm nay tại SJC, DOJI kèm giờ cập nhật từng hãng, giá vàng thế giới quy đổi và mức chênh với trong nước.">
+<title>Giá vàng hôm nay: SJC, DOJI, Bảo Tín Mạnh Hải</title>
+<meta name="description" content="Giá vàng miếng, nhẫn SJC hôm nay cùng DOJI, Hưng Thịnh Vượng (DOJI), Bảo Tín Mạnh Hải, có giờ từng dòng, giá thế giới quy đổi và biểu đồ vàng quỹ SPDR.">
 <link rel="canonical" href="https://hieuthinhvuong.github.io/gia-vang-hom-nay/">
 <meta name="robots" content="index, follow">
 
@@ -13,8 +13,8 @@
 <meta property="og:locale" content="vi_VN">
 <meta property="og:site_name" content="Hiếu Thịnh Vượng">
 <meta property="og:url" content="https://hieuthinhvuong.github.io/gia-vang-hom-nay/">
-<meta property="og:title" content="Giá vàng hôm nay: SJC, DOJI, nhẫn 9999 | Hiếu Thịnh Vượng">
-<meta property="og:description" content="Giá vàng miếng SJC, nhẫn 9999 hôm nay tại SJC, DOJI kèm giờ cập nhật từng hãng, giá vàng thế giới quy đổi và mức chênh với trong nước.">
+<meta property="og:title" content="Giá vàng hôm nay: SJC, DOJI, Bảo Tín Mạnh Hải">
+<meta property="og:description" content="Giá vàng miếng, nhẫn SJC hôm nay cùng DOJI, Hưng Thịnh Vượng (DOJI), Bảo Tín Mạnh Hải, có giờ từng dòng, giá thế giới quy đổi và biểu đồ vàng quỹ SPDR.">
 <meta property="og:image" content="https://hieuthinhvuong.github.io/images/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
@@ -44,7 +44,7 @@ h3{font-size:19px;margin-bottom:2px}
 .bao{display:none;background:#fff4d6;border:1px solid #e0c27a;border-radius:10px;padding:10px 14px;margin:12px 0;font-weight:600}
 .bao.hien{display:block}
 .luoi{display:grid;gap:16px}
-@media(min-width:760px){.luoi{grid-template-columns:1fr 1fr}.luoi.mot-cot{grid-template-columns:minmax(0,560px)}}
+@media(min-width:760px){.luoi{grid-template-columns:1fr 1fr}.luoi.mot-cot{grid-template-columns:minmax(0,560px)}.the-hang.chinh{grid-column:1/-1}}
 .the-hang{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}
 .gio{font-size:14px;color:var(--mute);margin-bottom:8px}
 .gio.tt-loi,.gio.tt-cu,.gio.tt-chua_co{color:#8a4b00;font-weight:600}
@@ -76,8 +76,32 @@ footer{background:var(--ink);color:rgba(245,242,234,.7);font-size:14px}
 .chan ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:10px}
 .chan a{color:rgba(245,242,234,.9);display:inline-block;padding:4px 0}
 :focus-visible{outline:2px solid var(--goldink);outline-offset:3px;border-radius:4px}
+.the-hang.chinh{border:2px solid var(--gold)}
+.the-hang.chinh h3{font-size:22px}
+.gio-dong{font-weight:400;margin:2px 0 0;font-size:13px}
+.spdr{background:#fff;border:1px solid var(--line);border-radius:16px;margin-top:6px;overflow:hidden}
+.spdr-dau{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:10px;padding:16px 16px 6px}
+.spdr-dau h3{font-size:19px;margin:0}
+.spdr-dau p{font-size:14px;color:var(--mute)}
+.spdr-nut{display:inline-flex;background:var(--ivory);border-radius:10px;padding:3px}
+.spdr-nut button{font:inherit;font-size:14px;font-weight:700;border:0;background:transparent;color:var(--mute);padding:8px 14px;border-radius:8px;cursor:pointer;min-height:40px;min-width:52px}
+.spdr-nut button[aria-pressed=true]{background:#fff;color:#8a5000;box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.spdr-ve{position:relative;height:300px;margin:0 6px;touch-action:pan-y}
+@media(min-width:620px){.spdr-ve{height:390px;margin:0 12px}}
+.spdr-ve svg{display:block;width:100%;height:100%}
+/* Logo Kiến Tha mờ 12% giữa vùng vẽ (Sếp 15:3x 20/11 "để logo của tôi"): nằm dưới SVG (isolation + z-index -1), không che số, nhãn, tooltip */
+.spdr-ve{isolation:isolate}
+.spdr-ve:before{content:"";position:absolute;left:40px;right:34px;top:26px;bottom:28px;background:url(/images/kien-tha-logo-doc-nau.svg) 50% 42%/min(72%,200px) auto no-repeat;opacity:.12;z-index:-1;pointer-events:none}
+@media(min-width:620px){.spdr-ve:before{left:58px;right:52px;background-image:url(/images/kien-tha-logo-ngang-nau.svg);background-size:min(62%,440px) auto}}
+.spdr-ve:focus-visible{outline-offset:-2px}
+.spdr-tip{position:absolute;pointer-events:none;background:rgba(16,16,16,.92);color:#fff;font-size:13px;line-height:1.45;padding:8px 10px;border-radius:8px;white-space:nowrap;display:none;z-index:2}
+.spdr-tip b{display:block;font-size:13px;margin-bottom:2px}
+.spdr-chu{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 22px;padding:10px 16px 14px;border-top:1px solid var(--ivory2);font-size:13px;font-weight:700;color:var(--mute);background:#fcfbf8}
+.spdr-chu span:before{content:"";display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:7px;vertical-align:-1px;background:#f0a33a}
+.spdr-chu span+span:before{background:#14a37a}
+.spdr-tom{font-size:15px;margin:10px 0 0}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://hieuthinhvuong.github.io/#website","url":"https://hieuthinhvuong.github.io/","name":"Hiếu Thịnh Vượng","inLanguage":"vi-VN","publisher":{"@id":"https://hieuthinhvuong.github.io/#person"}},{"@type":"Person","@id":"https://hieuthinhvuong.github.io/#person","name":"Hiếu Thịnh Vượng","url":"https://hieuthinhvuong.github.io/","image":"https://hieuthinhvuong.github.io/images/that/hieu-man-dau.webp","jobTitle":"Nhà đầu tư, người nghiên cứu thị trường","sameAs":["https://www.facebook.com/hieuthinhvuongofficial","https://www.tiktok.com/@hieuthinhvuong"],"affiliation":{"@id":"https://hieuthinhvuong.github.io/#organization"}},{"@type":"WebPage","@id":"https://hieuthinhvuong.github.io/gia-vang-hom-nay/#webpage","url":"https://hieuthinhvuong.github.io/gia-vang-hom-nay/","name":"Giá vàng hôm nay: SJC, DOJI, nhẫn 9999 | Hiếu Thịnh Vượng","description":"Giá vàng miếng SJC, nhẫn 9999 hôm nay tại SJC, DOJI kèm giờ cập nhật từng hãng, giá vàng thế giới quy đổi và mức chênh với trong nước.","inLanguage":"vi-VN","isPartOf":{"@id":"https://hieuthinhvuong.github.io/#website"},"about":{"@id":"https://hieuthinhvuong.github.io/gia-vang-hom-nay/#dataset"},"author":{"@id":"https://hieuthinhvuong.github.io/#person"},"dateModified":"2026-11-20T14:14:31+07:00","breadcrumb":{"@id":"https://hieuthinhvuong.github.io/gia-vang-hom-nay/#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://hieuthinhvuong.github.io/gia-vang-hom-nay/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://hieuthinhvuong.github.io/"},{"@type":"ListItem","position":2,"name":"Giá vàng hôm nay","item":"https://hieuthinhvuong.github.io/gia-vang-hom-nay/"}]},{"@type":"Dataset","@id":"https://hieuthinhvuong.github.io/gia-vang-hom-nay/#dataset","name":"Giá vàng hôm nay (vàng miếng, nhẫn 9999)","description":"Giá mua vào, bán ra vàng miếng và nhẫn 9999 niêm yết trên trang web của hãng vàng, kèm giờ cập nhật từng hãng, giá vàng thế giới quy đổi và mức chênh. Đơn vị triệu đồng/lượng.","url":"https://hieuthinhvuong.github.io/gia-vang-hom-nay/","inLanguage":"vi-VN","isAccessibleForFree":true,"creator":{"@id":"https://hieuthinhvuong.github.io/#person"},"dateModified":"2026-11-20T14:14:31+07:00","temporalCoverage":"2026-11-20","variableMeasured":["Giá mua vào (triệu đồng/lượng)","Giá bán ra (triệu đồng/lượng)"],"distribution":{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://hieuthinhvuong.github.io/data/gia-vang.json"}},{"@type":"Organization","@id":"https://hieuthinhvuong.github.io/#organization","name":"TCTV INVEST","url":"https://hieuthinhvuong.github.io/","member":{"@id":"https://hieuthinhvuong.github.io/#person"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://hieuthinhvuong.github.io/#website","url":"https://hieuthinhvuong.github.io/","name":"Hiếu Thịnh Vượng","inLanguage":"vi-VN","publisher":{"@id":"https://hieuthinhvuong.github.io/#person"}},{"@type":"Person","@id":"https://hieuthinhvuong.github.io/#person","name":"Hiếu Thịnh Vượng","url":"https://hieuthinhvuong.github.io/","image":"https://hieuthinhvuong.github.io/images/that/hieu-man-dau.webp","jobTitle":"Nhà đầu tư, người nghiên cứu thị trường","sameAs":["https://www.facebook.com/hieuthinhvuongofficial","https://www.tiktok.com/@hieuthinhvuong"],"affiliation":{"@id":"https://hieuthinhvuong.github.io/#organization"}},{"@type":"WebPage","@id":"https://hieuthinhvuong.github.io/gia-vang-hom-nay/#webpage","url":"https://hieuthinhvuong.github.io/gia-vang-hom-nay/","name":"Giá vàng hôm nay: SJC, DOJI, Bảo Tín Mạnh Hải","description":"Giá vàng miếng, nhẫn SJC hôm nay cùng DOJI, Hưng Thịnh Vượng (DOJI), Bảo Tín Mạnh Hải, có giờ từng dòng, giá thế giới quy đổi và biểu đồ vàng quỹ SPDR.","inLanguage":"vi-VN","isPartOf":{"@id":"https://hieuthinhvuong.github.io/#website"},"about":{"@id":"https://hieuthinhvuong.github.io/gia-vang-hom-nay/#dataset"},"author":{"@id":"https://hieuthinhvuong.github.io/#person"},"dateModified":"2026-11-20T15:42:05+07:00","breadcrumb":{"@id":"https://hieuthinhvuong.github.io/gia-vang-hom-nay/#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://hieuthinhvuong.github.io/gia-vang-hom-nay/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://hieuthinhvuong.github.io/"},{"@type":"ListItem","position":2,"name":"Giá vàng hôm nay","item":"https://hieuthinhvuong.github.io/gia-vang-hom-nay/"}]},{"@type":"Dataset","@id":"https://hieuthinhvuong.github.io/gia-vang-hom-nay/#dataset","name":"Giá vàng hôm nay (vàng miếng, nhẫn 9999)","description":"Giá mua vào, bán ra vàng miếng và nhẫn 9999 của SJC, DOJI, Hưng Thịnh Vượng (DOJI), Bảo Tín Mạnh Hải, kèm giờ web đọc, giá vàng thế giới quy đổi và mức chênh. Đơn vị triệu đồng/lượng.","url":"https://hieuthinhvuong.github.io/gia-vang-hom-nay/","inLanguage":"vi-VN","isAccessibleForFree":true,"creator":{"@id":"https://hieuthinhvuong.github.io/#person"},"dateModified":"2026-11-20T15:42:05+07:00","temporalCoverage":"2026-11-20","variableMeasured":["Giá mua vào (triệu đồng/lượng)","Giá bán ra (triệu đồng/lượng)"],"about":[{"@type":"Brand","name":"SJC"},{"@type":"Brand","name":"DOJI"},{"@type":"Brand","name":"Hưng Thịnh Vượng"},{"@type":"Brand","name":"Bảo Tín Mạnh Hải"}],"keywords":["giá vàng hôm nay","giá vàng SJC","giá nhẫn SJC","giá vàng DOJI","giá nhẫn Hưng Thịnh Vượng","giá vàng Bảo Tín Mạnh Hải"],"distribution":{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://hieuthinhvuong.github.io/data/gia-vang.json"}},{"@type":"Dataset","@id":"https://hieuthinhvuong.github.io/gia-vang-hom-nay/#spdr","name":"Lượng vàng quỹ SPDR Gold Trust nắm giữ","description":"Số tấn vàng quỹ SPDR Gold Trust nắm giữ theo từng phiên và mức thay đổi so với phiên trước, đơn vị tấn.","url":"https://hieuthinhvuong.github.io/gia-vang-hom-nay/#spdr","inLanguage":"vi-VN","isAccessibleForFree":true,"creator":{"@id":"https://hieuthinhvuong.github.io/#person"},"variableMeasured":["Lượng vàng nắm giữ (tấn)","Thay đổi so với phiên trước (tấn)"],"distribution":{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://hieuthinhvuong.github.io/data/spdr.json"}},{"@type":"Organization","@id":"https://hieuthinhvuong.github.io/#organization","name":"TCTV INVEST","url":"https://hieuthinhvuong.github.io/","member":{"@id":"https://hieuthinhvuong.github.io/#person"}}]}</script>
 </head>
 <body>
 <a class="bo-qua" href="#noi-dung">Bỏ qua menu, tới nội dung</a>
@@ -93,17 +117,43 @@ footer{background:var(--ink);color:rgba(245,242,234,.7);font-size:14px}
 <main id="noi-dung">
   <nav class="vet" aria-label="Vị trí trang"><ol><li><a href="/">Trang chủ</a></li><li aria-current="page">Giá vàng hôm nay</li></ol></nav>
   <h1>Giá vàng hôm nay</h1>
-  <p class="dan">Ngày 20/11/2026. Giá mua vào, bán ra vàng miếng và nhẫn 9999, đơn vị triệu đồng/lượng.</p>
+  <p class="dan">Ngày 20/11/2026. Giá mua vào, bán ra vàng miếng và nhẫn 9999 của SJC, DOJI, Hưng Thịnh Vượng (DOJI), Bảo Tín Mạnh Hải, đơn vị triệu đồng/lượng.</p>
   <section aria-labelledby="bang-gia">
-    <h2 id="bang-gia">Bảng giá vàng miếng, nhẫn 9999</h2>
-    <div class="luoi mot-cot">
+    <h2 id="bang-gia">Bảng giá vàng theo thương hiệu</h2>
+    <div class="luoi">
+      <div class="the-hang chinh" id="hang-sjc">
+        <h3>SJC</h3>
+        <div class="cuon-bang"><table>
+          <caption class="an">Giá SJC, đơn vị triệu đồng/lượng</caption>
+          <thead><tr><th scope="col">Loại vàng</th><th scope="col">Mua vào</th><th scope="col">Bán ra</th></tr></thead>
+          <tbody><tr data-k="SJC.vang_mieng" class="tt-ok"><th scope="row">Vàng miếng SJC 1L, 10L, 1KG<p class="gio gio-dong" data-gio="sjc:SJC.vang_mieng">Cập nhật lúc: 15:42 20/11/2026</p></th><td data-o="mua">129,2</td><td data-o="ban">134,2</td></tr><tr data-k="SJCN.nhan_9999" class="tt-ok"><th scope="row">Nhẫn SJC 99,99% (1, 2, 5 chỉ)<p class="gio gio-dong" data-gio="sjc:SJCN.nhan_9999">Cập nhật lúc: 15:42 20/11/2026</p></th><td data-o="mua">128,0</td><td data-o="ban">134,0</td></tr></tbody>
+        </table></div>
+      </div>
       <div class="the-hang" id="hang-doji">
         <h3>DOJI</h3>
-        <p class="gio tt-ok" data-gio="DOJI">Cập nhật lúc: 14:04 20/11/2026</p>
+        <p class="gio tt-ok" data-gio="doji">Cập nhật lúc: 15:42 20/11/2026</p>
         <div class="cuon-bang"><table>
           <caption class="an">Giá DOJI, đơn vị triệu đồng/lượng</caption>
           <thead><tr><th scope="col">Loại vàng</th><th scope="col">Mua vào</th><th scope="col">Bán ra</th></tr></thead>
-          <tbody><tr data-k="DOJI.vang_mieng" class="tt-ok"><th scope="row">Vàng miếng SJC</th><td data-o="mua">129,2</td><td data-o="ban">134,2</td></tr><tr data-k="DOJI.nhan_9999" class="tt-ok"><th scope="row">Nhẫn tròn 9999 Hưng Thịnh Vượng</th><td data-o="mua">129,3</td><td data-o="ban">133,3</td></tr></tbody>
+          <tbody><tr data-k="DOJI.vang_mieng" class="tt-ok"><th scope="row">Vàng miếng SJC</th><td data-o="mua">129,2</td><td data-o="ban">134,2</td></tr><tr data-k="DOJI.kim_tt" class="tt-ok"><th scope="row">Vàng 9999 Kim TT/AVPL</th><td data-o="mua">129,3</td><td data-o="ban">133,3</td></tr></tbody>
+        </table></div>
+      </div>
+      <div class="the-hang" id="hang-htv">
+        <h3>Hưng Thịnh Vượng (DOJI)</h3>
+        <p class="gio tt-ok" data-gio="htv">Cập nhật lúc: 15:42 20/11/2026</p>
+        <div class="cuon-bang"><table>
+          <caption class="an">Giá Hưng Thịnh Vượng (DOJI), đơn vị triệu đồng/lượng</caption>
+          <thead><tr><th scope="col">Loại vàng</th><th scope="col">Mua vào</th><th scope="col">Bán ra</th></tr></thead>
+          <tbody><tr data-k="DOJI.nhan_9999" class="tt-ok"><th scope="row">Nhẫn tròn 9999 Hưng Thịnh Vượng (DOJI)</th><td data-o="mua">129,3</td><td data-o="ban">133,3</td></tr></tbody>
+        </table></div>
+      </div>
+      <div class="the-hang" id="hang-btmh">
+        <h3>Bảo Tín Mạnh Hải</h3>
+        <p class="gio tt-ok" data-gio="btmh">Cập nhật lúc: 15:42 20/11/2026</p>
+        <div class="cuon-bang"><table>
+          <caption class="an">Giá Bảo Tín Mạnh Hải, đơn vị triệu đồng/lượng</caption>
+          <thead><tr><th scope="col">Loại vàng</th><th scope="col">Mua vào</th><th scope="col">Bán ra</th></tr></thead>
+          <tbody><tr data-k="BTMH.vang_mieng" class="tt-ok"><th scope="row">Vàng miếng SJC</th><td data-o="mua">129,2</td><td data-o="ban">134,2</td></tr><tr data-k="BTMH.nhan_9999" class="tt-ok"><th scope="row">Nhẫn tròn ép vỉ Kim Gia Bảo 24K</th><td data-o="mua">128,3</td><td data-o="ban">133,3</td></tr></tbody>
         </table></div>
       </div>
     </div>
@@ -111,11 +161,25 @@ footer{background:var(--ink);color:rgba(245,242,234,.7);font-size:14px}
   </section>
   <section aria-labelledby="the-gioi">
     <h2 id="the-gioi">Vàng thế giới quy đổi và mức chênh</h2>
-    <p data-tg="1">Giá vàng thế giới <strong>3.553,8 USD/ounce</strong>. Quy đổi theo tỷ giá bán USD 25.980 đồng: khoảng <strong>111,3 triệu đồng/lượng</strong>, chưa gồm thuế, phí.</p><p class="gio">Cập nhật lúc: 14:10 20/11/2026</p>
+    <p data-tg="1">Giá vàng thế giới <strong>3.588,4 USD/ounce</strong>. Quy đổi theo tỷ giá bán USD 25.980 đồng: khoảng <strong>112,4 triệu đồng/lượng</strong>, chưa gồm thuế, phí.</p><p class="gio">Cập nhật lúc: 15:42 20/11/2026</p>
     <div class="cuon-bang"><table>
           <caption class="an">Mức chênh, đơn vị triệu đồng/lượng</caption>
           <thead><tr><th scope="col">Loại vàng</th><th scope="col">Chênh mua bán</th><th scope="col">Bán ra so với thế giới</th></tr></thead>
-          <tbody><tr><th scope="row">Vàng miếng SJC tại DOJI</th><td>5,0</td><td>+22,9</td></tr><tr><th scope="row">Nhẫn tròn 9999 Hưng Thịnh Vượng tại DOJI</th><td>4,0</td><td>+22,0</td></tr></tbody></table></div>
+          <tbody><tr><th scope="row">Vàng miếng SJC 1L, 10L, 1KG tại SJC</th><td>5,0</td><td>+21,8</td></tr><tr><th scope="row">Nhẫn SJC 99,99% (1, 2, 5 chỉ)</th><td>6,0</td><td>+21,6</td></tr><tr><th scope="row">Vàng miếng SJC tại DOJI</th><td>5,0</td><td>+21,8</td></tr><tr><th scope="row">Vàng 9999 Kim TT/AVPL tại DOJI</th><td>4,0</td><td>+20,9</td></tr><tr><th scope="row">Nhẫn tròn 9999 Hưng Thịnh Vượng (DOJI)</th><td>4,0</td><td>+20,9</td></tr><tr><th scope="row">Vàng miếng SJC tại Bảo Tín Mạnh Hải</th><td>5,0</td><td>+21,8</td></tr><tr><th scope="row">Nhẫn tròn ép vỉ Kim Gia Bảo 24K tại Bảo Tín Mạnh Hải</th><td>5,0</td><td>+20,9</td></tr></tbody></table></div>
+  </section>
+  <section aria-labelledby="spdr-tieu-de">
+    <h2 id="spdr-tieu-de">Lượng vàng quỹ SPDR Gold Trust nắm giữ</h2>
+    <p>SPDR Gold Trust là quỹ ETF vàng lớn nhất thế giới, mỗi chứng chỉ quỹ được bảo chứng bằng vàng thỏi cất trong kho. Nhà đầu tư mua thêm chứng chỉ thì quỹ nhập thêm vàng, bán ra thì lượng vàng giảm.</p>
+    <p>Vì vậy số tấn quỹ nắm giữ tăng hay giảm cho thấy dòng tiền lớn đang vào hay rút khỏi vàng. Biểu đồ chỉ ghi lại số đã công bố, không dự báo giá.</p>
+    <p class="spdr-tom">Phiên 19/11/2026: quỹ nắm giữ 1.038,1 tấn vàng, giảm 5,98 tấn so với phiên trước.</p>
+    <div class="spdr" id="spdr">
+      <div class="spdr-dau">
+        <div><h3>SPDR Gold Trust</h3><p>Lượng nắm giữ và thay đổi theo phiên (đơn vị: tấn)</p></div>
+        <div class="spdr-nut" role="group" aria-label="Số phiên hiển thị"><button type="button" data-n="15" aria-pressed="true">15D</button><button type="button" data-n="30" aria-pressed="false">30D</button></div>
+      </div>
+      <div class="spdr-ve" tabindex="0" role="group" aria-roledescription="biểu đồ" aria-label="Biểu đồ SPDR, dùng phím trái phải để xem từng phiên"><div class="spdr-tip" role="status"></div></div>
+      <div class="spdr-chu"><span>Lượng nắm giữ (tấn)</span><span>Thay đổi mua/bán (tấn)</span></div>
+    </div>
   </section>
   <section class="cta" aria-labelledby="kien-tha">
     <h2 id="kien-tha">Tích sản vàng cùng cộng đồng Kiến Tha</h2>
@@ -130,25 +194,81 @@ footer{background:var(--ink);color:rgba(245,242,234,.7);font-size:14px}
       
     </ul>
   </section>
-  <p class="mien-tru">Giá tham khảo theo giờ cập nhật trên bảng. Nội dung mang tính giáo dục, không phải lời khuyên đầu tư.</p>
+  <p class="mien-tru">Giá tham khảo lấy từ bảng giá công khai của từng hãng, theo giờ web đọc. Giá mua bán thật là giá cửa hàng báo. Nội dung mang tính giáo dục, không phải lời khuyên đầu tư.</p>
 </main>
 <footer><div class="chan">
-  <ul><li><a href="/">Trang chủ</a></li><li><a href="/chien-luoc/">Chiến lược tích sản</a></li><li><a href="/chinh-sach/">Chính sách riêng tư</a></li></ul>
-  <p>Trang thuộc hieuthinhvuong.github.io, do Hiếu Thịnh Vượng vận hành. Không dùng cookie, không mã đo lường.</p>
+  <ul><li><a href="/">Trang chủ</a></li><li><a href="/chien-luoc/">Chiến lược tích sản</a></li><li><a href="/chinh-sach/">Chính sách riêng tư</a></li><li><a href="/dieu-khoan-su-dung/">Điều khoản sử dụng</a></li></ul>
+  <p>Trang thuộc hieuthinhvuong.github.io, do Hiếu Thịnh Vượng vận hành. Không dùng cookie, không gắn mã quảng cáo.</p>
 </div></footer>
-<script>window.__GIA_VANG__={"kiem_luc": "2026-11-20T14:14:31+07:00"};</script>
+<script>window.__GIA_VANG__={"kiem_luc": "2026-11-20T15:42:05+07:00"};</script>
 <script>
 (function(){
 function so(x){return x.toFixed(1).replace('.',',')}
 function ap(j){
- (j.dong||[]).forEach(function(r){var tr=document.querySelector('tr[data-k="'+r.hang+'.'+r.loai+'"]');if(!tr)return;
-  var m=r.mua!=null?r.mua:r.mua_cuoi,b=r.ban!=null?r.ban:r.ban_cuoi;if(m==null||b==null)return;
-  tr.querySelector('[data-o=mua]').textContent=so(m);tr.querySelector('[data-o=ban]').textContent=so(b);});
- (j.gio_hang||[]).forEach(function(g){var p=document.querySelector('[data-gio="'+g.hang+'"]');if(p&&g.chu)p.textContent=g.chu});
+ (j.dong||[]).forEach(function(r){var m=r.mua!=null?r.mua:r.mua_cuoi,b=r.ban!=null?r.ban:r.ban_cuoi;if(m==null||b==null)return;
+  document.querySelectorAll('tr[data-k="'+r.hang+'.'+r.loai+'"]').forEach(function(tr){
+  tr.querySelector('[data-o=mua]').textContent=so(m);tr.querySelector('[data-o=ban]').textContent=so(b);});});
+ (j.gio_khoi||[]).forEach(function(g){var p=document.querySelector('[data-gio="'+g.ma+'"]');if(p&&g.chu)p.textContent=g.chu});
 }
 var dau=window.__GIA_VANG__;
 fetch('/data/gia-vang.json',{cache:'no-store',credentials:'omit'}).then(function(r){return r.ok?r.json():null}).then(function(j){
  if(j&&j.kiem_luc&&(!dau||new Date(j.kiem_luc)>=new Date(dau.kiem_luc)))ap(j)}).catch(function(){});
+})();
+</script>
+<script>
+(function(){
+var hop=document.getElementById('spdr');if(!hop)return;
+var ve=hop.querySelector('.spdr-ve'),tip=hop.querySelector('.spdr-tip'),nut=hop.querySelectorAll('[data-n]');
+var D=null,N=15,chon=-1,NS='http://www.w3.org/2000/svg',CAM='#f0a33a',XANH='#14a37a',DO='#d64545',XAM='#9aa0a6';
+function vn(x,d){var a=Math.abs(x).toFixed(d).split('.');a[0]=a[0].replace(/\B(?=(\d{3})+(?!\d))/g,'.');return (x<0?'-':'')+a.join(',')}
+function ngay(s){var p=s.split('-');return p[2]+'/'+p[1]}
+function ngayDu(s){var p=s.split('-');return p[2]+'/'+p[1]+'/'+p[0]}
+function mau(v){return v>0?XANH:(v<0?DO:XAM)}
+function tron(t,b){var c=[1,2,5,10,20,50,100];for(var i=0;i<c.length;i++)if(c[i]>=t*b)return c[i];return Math.ceil(t*b)}
+function buocDep(x){var c=[0.5,1,2,2.5,5,10,20,25,50,100];for(var i=0;i<c.length;i++)if(c[i]>=x)return c[i];return Math.ceil(x)}
+function ve1(){
+ if(!D)return;var p=D.slice(-N),W=ve.clientWidth,H=ve.clientHeight,nho=W<520;
+ var L=nho?40:58,R=nho?34:52,T=26,B=28,w=W-L-R,h=H-T-B,n=p.length,o=w/n;
+ var lo=Infinity,hi=-Infinity,md=0;p.forEach(function(x){lo=Math.min(lo,x.tan);hi=Math.max(hi,x.tan);md=Math.max(md,Math.abs(x.doi))});
+ var dem=Math.max((hi-lo)*0.25,2),st=buocDep((hi+dem*0.6-(lo-dem))/4),y0=Math.floor((lo-dem)/st)*st,y1=y0+st*4,r=tron(md,1.25)||1;
+ while(y1<hi+dem*0.3){st=buocDep(st*1.01+0.01);y0=Math.floor((lo-dem)/st)*st;y1=y0+st*4}
+ function yt(v){return T+h-(v-y0)/(y1-y0)*h}function yp(v){return T+h/2-v/r*h/2}function xc(i){return L+o*i+o/2}
+ var s='<svg xmlns="'+NS+'" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Biểu đồ lượng vàng SPDR Gold Trust '+n+' phiên gần nhất">';
+ for(var k=0;k<=4;k++){var v=y0+(y1-y0)*k/4,y=yt(v);s+='<line x1="'+L+'" x2="'+(L+w)+'" y1="'+y+'" y2="'+y+'" stroke="#ebe6d9"/>';
+  s+='<text x="'+(L-6)+'" y="'+(y+4)+'" text-anchor="end" font-size="11" fill="#57574f">'+vn(v,st%1?1:0)+'</text>';
+  var vr=r-r*k/2;s+='<text x="'+(L+w+6)+'" y="'+(yp(vr)+4)+'" font-size="11" fill="#57574f">'+vn(vr,r<5?1:0)+'</text>'}
+ s+='<line x1="'+L+'" x2="'+(L+w)+'" y1="'+yp(0)+'" y2="'+yp(0)+'" stroke="#8b8b80" stroke-dasharray="4 4"/>';
+ if(chon>=0&&chon<n)s+='<rect x="'+(L+o*chon)+'" y="'+T+'" width="'+o+'" height="'+h+'" fill="#c7a76a" fill-opacity=".14"/>';
+ var bw=Math.max(3,o*0.62),nhan=o>=40;
+ p.forEach(function(x,i){var y=yt(x.tan);s+='<rect x="'+(xc(i)-bw/2)+'" y="'+y+'" width="'+bw+'" height="'+(T+h-y)+'" rx="3" fill="'+CAM+'"/>';
+  if(nhan||i==n-1)s+='<text x="'+xc(i)+'" y="'+(y-5)+'" text-anchor="middle" font-size="11" font-weight="700" fill="#8a5000">'+vn(x.tan,1)+'</text>'});
+ var d='';p.forEach(function(x,i){var X=xc(i),Y=yp(x.doi);if(!i){d='M'+X+' '+Y;return}
+  var a=p[Math.max(i-2,0)],b=p[i-1],c=p[Math.min(i+1,n-1)],x0=xc(Math.max(i-2,0)),x1=xc(i-1),x3=xc(Math.min(i+1,n-1)),k=0.18;
+  d+=' C'+(x1+(X-x0)*k)+' '+(yp(b.doi)+(Y-yp(a.doi))*k)+' '+(X-(x3-x1)*k)+' '+(Y-(yp(c.doi)-yp(b.doi))*k)+' '+X+' '+Y});
+ s+='<path d="'+d+'" fill="none" stroke="'+XANH+'" stroke-width="2.5"/>';
+ p.forEach(function(x,i){var X=xc(i),Y=yp(x.doi);s+='<circle cx="'+X+'" cy="'+Y+'" r="'+(i==chon?6:4.5)+'" fill="'+(i==chon?mau(x.doi):'#fff')+'" stroke="'+mau(x.doi)+'" stroke-width="2.5"/>';
+  var yl=x.doi<0?Y+17:Y-9,yb=yt(x.tan)-5;if(Math.abs(yl-yb)<13)yl=x.doi<0?Y-9:Y+17;if(Math.abs(yl-yb)<13)yl=yb-14;
+  if(nhan||i==n-1)s+='<text x="'+X+'" y="'+yl+'" text-anchor="middle" font-size="11" font-weight="700" fill="'+mau(x.doi)+'" paint-order="stroke" stroke="#fff" stroke-width="3">'+vn(x.doi,2)+'</text>'});
+ var buoc=Math.max(1,Math.ceil(44/o));
+ p.forEach(function(x,i){if((n-1-i)%buoc==0)s+='<text x="'+xc(i)+'" y="'+(H-8)+'" text-anchor="middle" font-size="11" fill="#57574f">'+ngay(x.ngay)+'</text>'});
+ s+='<rect x="'+L+'" y="'+T+'" width="'+w+'" height="'+h+'" fill="transparent"/></svg>';
+ ve.innerHTML=s;ve.appendChild(tip);ve.__h={L:L,o:o,n:n,W:W,T:T};
+ if(chon>=0&&chon<n){var x=p[chon];tip.innerHTML='<b>'+ngayDu(x.ngay)+'</b>Nắm giữ: '+vn(x.tan,1)+' tấn<br>Thay đổi: '+(x.doi>0?'+':'')+vn(x.doi,2)+' tấn';
+  tip.style.display='block';var tx=xc(chon)+12;if(tx+tip.offsetWidth>W)tx=xc(chon)-12-tip.offsetWidth;tip.style.left=Math.max(0,tx)+'px';tip.style.top=T+'px'}
+ else tip.style.display='none';
+}
+function den(ev){var g=ve.__h;if(!g)return;var b=ve.getBoundingClientRect(),x=(ev.touches?ev.touches[0].clientX:ev.clientX)-b.left;
+ var i=Math.floor((x-g.L)/g.o);i=i<0||i>=g.n?-1:i;if(i!=chon){chon=i;ve1()}}
+ve.addEventListener('mousemove',den);ve.addEventListener('mouseleave',function(){chon=-1;ve1()});
+ve.addEventListener('touchstart',den,{passive:true});ve.addEventListener('touchmove',den,{passive:true});
+ve.addEventListener('keydown',function(ev){var n=Math.min(N,D?D.length:0);if(ev.key=='ArrowRight'){chon=chon<0?n-1:Math.min(n-1,chon+1)}else if(ev.key=='ArrowLeft'){chon=chon<0?n-1:Math.max(0,chon-1)}else if(ev.key=='Escape'){chon=-1}else return;ev.preventDefault();ve1()});
+ve.addEventListener('blur',function(){chon=-1;ve1()});
+Array.prototype.forEach.call(nut,function(b){b.addEventListener('click',function(){N=+b.getAttribute('data-n');chon=-1;
+ Array.prototype.forEach.call(nut,function(c){c.setAttribute('aria-pressed',c===b?'true':'false')});ve1()})});
+var hen;window.addEventListener('resize',function(){clearTimeout(hen);hen=setTimeout(ve1,150)});
+function tai(){fetch('/data/spdr.json',{credentials:'omit'}).then(function(r){return r.ok?r.json():null}).then(function(j){
+ if(j&&j.phien&&j.phien.length){D=j.phien;ve1()}}).catch(function(){})}
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){io.disconnect();tai()}},{rootMargin:'300px'});io.observe(hop)}else tai();
 })();
 </script>
 </body>
