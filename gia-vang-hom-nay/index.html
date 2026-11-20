@@ -79,6 +79,23 @@ footer{background:var(--ink);color:rgba(245,242,234,.7);font-size:14px}
 .the-hang.chinh{border:2px solid var(--gold)}
 .the-hang.chinh h3{font-size:22px}
 .gio-dong{font-weight:400;margin:2px 0 0;font-size:13px}
+/* Bảng giá (Sếp 15:5x 20/11): tiêu đề cột không xuống dòng, cột giá cố định, số canh phải, to và đậm hơn tên.
+   Màn <= 480px: mỗi hàng thành 1 khối, tên vàng ở trên (cả bề ngang), dưới là 2 ô có nhãn nhỏ "Mua vào", "Bán ra". */
+.bang-gia thead th{white-space:nowrap}
+.bang-gia thead th+th,.bang-gia td{width:5.2em}
+.bang-gia tbody th,.bang-gia tbody td{vertical-align:baseline}
+.bang-gia td{font-size:19px;font-weight:800}
+.bang-gia tbody th{font-size:16px;line-height:1.45}
+@media(max-width:480px){
+.bang-gia thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.bang-gia,.bang-gia tbody{display:block}
+.bang-gia tbody tr{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:12px 0;border-bottom:1px solid var(--ivory2)}
+.bang-gia tbody tr:last-child{border-bottom:0;padding-bottom:2px}
+.bang-gia tbody th{grid-column:1/-1;padding:0;border:0}
+.bang-gia tbody td{width:auto;border:0;padding:6px 10px 7px;background:var(--ivory);border-radius:10px;text-align:right;font-size:21px;line-height:1.25}
+.bang-gia tbody td:before{content:attr(data-nhan);display:block;font-size:12px;font-weight:600;color:var(--mute);line-height:1.3;margin-bottom:2px;white-space:nowrap}
+.bang-gia tbody tr.tt-loi td,.bang-gia tbody tr.tt-chua_co td{font-size:14px}
+}
 .spdr{background:#fff;border:1px solid var(--line);border-radius:16px;margin-top:6px;overflow:hidden}
 .spdr-dau{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:10px;padding:16px 16px 6px}
 .spdr-dau h3{font-size:19px;margin:0}
@@ -123,37 +140,38 @@ footer{background:var(--ink);color:rgba(245,242,234,.7);font-size:14px}
     <div class="luoi">
       <div class="the-hang chinh" id="hang-sjc">
         <h3>SJC</h3>
-        <div class="cuon-bang"><table>
+        <p class="gio tt-ok" data-gio="sjc">Cập nhật lúc: 15:42 20/11/2026</p>
+        <div class="cuon-bang"><table class="bang-gia">
           <caption class="an">Giá SJC, đơn vị triệu đồng/lượng</caption>
           <thead><tr><th scope="col">Loại vàng</th><th scope="col">Mua vào</th><th scope="col">Bán ra</th></tr></thead>
-          <tbody><tr data-k="SJC.vang_mieng" class="tt-ok"><th scope="row">Vàng miếng SJC 1L, 10L, 1KG<p class="gio gio-dong" data-gio="sjc:SJC.vang_mieng">Cập nhật lúc: 15:42 20/11/2026</p></th><td data-o="mua">129,2</td><td data-o="ban">134,2</td></tr><tr data-k="SJCN.nhan_9999" class="tt-ok"><th scope="row">Nhẫn SJC 99,99% (1, 2, 5 chỉ)<p class="gio gio-dong" data-gio="sjc:SJCN.nhan_9999">Cập nhật lúc: 15:42 20/11/2026</p></th><td data-o="mua">128,0</td><td data-o="ban">134,0</td></tr></tbody>
+          <tbody><tr data-k="SJC.vang_mieng" class="tt-ok"><th scope="row">Vàng miếng SJC 1L, 10L, 1KG</th><td data-o="mua" data-nhan="Mua vào">129,2</td><td data-o="ban" data-nhan="Bán ra">134,2</td></tr><tr data-k="SJCN.nhan_9999" class="tt-ok"><th scope="row">Nhẫn SJC 99,99% (1, 2, 5 chỉ)</th><td data-o="mua" data-nhan="Mua vào">128,0</td><td data-o="ban" data-nhan="Bán ra">134,0</td></tr></tbody>
         </table></div>
       </div>
       <div class="the-hang" id="hang-doji">
         <h3>DOJI</h3>
         <p class="gio tt-ok" data-gio="doji">Cập nhật lúc: 15:42 20/11/2026</p>
-        <div class="cuon-bang"><table>
+        <div class="cuon-bang"><table class="bang-gia">
           <caption class="an">Giá DOJI, đơn vị triệu đồng/lượng</caption>
           <thead><tr><th scope="col">Loại vàng</th><th scope="col">Mua vào</th><th scope="col">Bán ra</th></tr></thead>
-          <tbody><tr data-k="DOJI.vang_mieng" class="tt-ok"><th scope="row">Vàng miếng SJC</th><td data-o="mua">129,2</td><td data-o="ban">134,2</td></tr><tr data-k="DOJI.kim_tt" class="tt-ok"><th scope="row">Vàng 9999 Kim TT/AVPL</th><td data-o="mua">129,3</td><td data-o="ban">133,3</td></tr></tbody>
+          <tbody><tr data-k="DOJI.vang_mieng" class="tt-ok"><th scope="row">Vàng miếng SJC</th><td data-o="mua" data-nhan="Mua vào">129,2</td><td data-o="ban" data-nhan="Bán ra">134,2</td></tr><tr data-k="DOJI.kim_tt" class="tt-ok"><th scope="row">Vàng 9999 Kim TT/AVPL</th><td data-o="mua" data-nhan="Mua vào">129,3</td><td data-o="ban" data-nhan="Bán ra">133,3</td></tr></tbody>
         </table></div>
       </div>
       <div class="the-hang" id="hang-htv">
         <h3>Hưng Thịnh Vượng (DOJI)</h3>
         <p class="gio tt-ok" data-gio="htv">Cập nhật lúc: 15:42 20/11/2026</p>
-        <div class="cuon-bang"><table>
+        <div class="cuon-bang"><table class="bang-gia">
           <caption class="an">Giá Hưng Thịnh Vượng (DOJI), đơn vị triệu đồng/lượng</caption>
           <thead><tr><th scope="col">Loại vàng</th><th scope="col">Mua vào</th><th scope="col">Bán ra</th></tr></thead>
-          <tbody><tr data-k="DOJI.nhan_9999" class="tt-ok"><th scope="row">Nhẫn tròn 9999 Hưng Thịnh Vượng (DOJI)</th><td data-o="mua">129,3</td><td data-o="ban">133,3</td></tr></tbody>
+          <tbody><tr data-k="DOJI.nhan_9999" class="tt-ok"><th scope="row">Nhẫn tròn 9999 Hưng Thịnh Vượng (DOJI)</th><td data-o="mua" data-nhan="Mua vào">129,3</td><td data-o="ban" data-nhan="Bán ra">133,3</td></tr></tbody>
         </table></div>
       </div>
       <div class="the-hang" id="hang-btmh">
         <h3>Bảo Tín Mạnh Hải</h3>
         <p class="gio tt-ok" data-gio="btmh">Cập nhật lúc: 15:42 20/11/2026</p>
-        <div class="cuon-bang"><table>
+        <div class="cuon-bang"><table class="bang-gia">
           <caption class="an">Giá Bảo Tín Mạnh Hải, đơn vị triệu đồng/lượng</caption>
           <thead><tr><th scope="col">Loại vàng</th><th scope="col">Mua vào</th><th scope="col">Bán ra</th></tr></thead>
-          <tbody><tr data-k="BTMH.vang_mieng" class="tt-ok"><th scope="row">Vàng miếng SJC</th><td data-o="mua">129,2</td><td data-o="ban">134,2</td></tr><tr data-k="BTMH.nhan_9999" class="tt-ok"><th scope="row">Nhẫn tròn ép vỉ Kim Gia Bảo 24K</th><td data-o="mua">128,3</td><td data-o="ban">133,3</td></tr></tbody>
+          <tbody><tr data-k="BTMH.vang_mieng" class="tt-ok"><th scope="row">Vàng miếng SJC</th><td data-o="mua" data-nhan="Mua vào">129,2</td><td data-o="ban" data-nhan="Bán ra">134,2</td></tr><tr data-k="BTMH.nhan_9999" class="tt-ok"><th scope="row">Nhẫn tròn ép vỉ Kim Gia Bảo 24K</th><td data-o="mua" data-nhan="Mua vào">128,3</td><td data-o="ban" data-nhan="Bán ra">133,3</td></tr></tbody>
         </table></div>
       </div>
     </div>
@@ -162,10 +180,10 @@ footer{background:var(--ink);color:rgba(245,242,234,.7);font-size:14px}
   <section aria-labelledby="the-gioi">
     <h2 id="the-gioi">Vàng thế giới quy đổi và mức chênh</h2>
     <p data-tg="1">Giá vàng thế giới <strong>3.588,4 USD/ounce</strong>. Quy đổi theo tỷ giá bán USD 25.980 đồng: khoảng <strong>112,4 triệu đồng/lượng</strong>, chưa gồm thuế, phí.</p><p class="gio">Cập nhật lúc: 15:42 20/11/2026</p>
-    <div class="cuon-bang"><table>
+    <div class="cuon-bang"><table class="bang-gia">
           <caption class="an">Mức chênh, đơn vị triệu đồng/lượng</caption>
           <thead><tr><th scope="col">Loại vàng</th><th scope="col">Chênh mua bán</th><th scope="col">Bán ra so với thế giới</th></tr></thead>
-          <tbody><tr><th scope="row">Vàng miếng SJC 1L, 10L, 1KG tại SJC</th><td>5,0</td><td>+21,8</td></tr><tr><th scope="row">Nhẫn SJC 99,99% (1, 2, 5 chỉ)</th><td>6,0</td><td>+21,6</td></tr><tr><th scope="row">Vàng miếng SJC tại DOJI</th><td>5,0</td><td>+21,8</td></tr><tr><th scope="row">Vàng 9999 Kim TT/AVPL tại DOJI</th><td>4,0</td><td>+20,9</td></tr><tr><th scope="row">Nhẫn tròn 9999 Hưng Thịnh Vượng (DOJI)</th><td>4,0</td><td>+20,9</td></tr><tr><th scope="row">Vàng miếng SJC tại Bảo Tín Mạnh Hải</th><td>5,0</td><td>+21,8</td></tr><tr><th scope="row">Nhẫn tròn ép vỉ Kim Gia Bảo 24K tại Bảo Tín Mạnh Hải</th><td>5,0</td><td>+20,9</td></tr></tbody></table></div>
+          <tbody><tr><th scope="row">Vàng miếng SJC 1L, 10L, 1KG tại SJC</th><td data-nhan="Chênh mua bán">5,0</td><td data-nhan="Bán ra so với thế giới">+21,8</td></tr><tr><th scope="row">Nhẫn SJC 99,99% (1, 2, 5 chỉ)</th><td data-nhan="Chênh mua bán">6,0</td><td data-nhan="Bán ra so với thế giới">+21,6</td></tr><tr><th scope="row">Vàng miếng SJC tại DOJI</th><td data-nhan="Chênh mua bán">5,0</td><td data-nhan="Bán ra so với thế giới">+21,8</td></tr><tr><th scope="row">Vàng 9999 Kim TT/AVPL tại DOJI</th><td data-nhan="Chênh mua bán">4,0</td><td data-nhan="Bán ra so với thế giới">+20,9</td></tr><tr><th scope="row">Nhẫn tròn 9999 Hưng Thịnh Vượng (DOJI)</th><td data-nhan="Chênh mua bán">4,0</td><td data-nhan="Bán ra so với thế giới">+20,9</td></tr><tr><th scope="row">Vàng miếng SJC tại Bảo Tín Mạnh Hải</th><td data-nhan="Chênh mua bán">5,0</td><td data-nhan="Bán ra so với thế giới">+21,8</td></tr><tr><th scope="row">Nhẫn tròn ép vỉ Kim Gia Bảo 24K tại Bảo Tín Mạnh Hải</th><td data-nhan="Chênh mua bán">5,0</td><td data-nhan="Bán ra so với thế giới">+20,9</td></tr></tbody></table></div>
   </section>
   <section aria-labelledby="spdr-tieu-de">
     <h2 id="spdr-tieu-de">Lượng vàng quỹ SPDR Gold Trust nắm giữ</h2>

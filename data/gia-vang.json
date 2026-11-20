@@ -77,6 +77,11 @@
  },
  "gio_khoi": [
   {
+   "ma": "sjc",
+   "chu": "Cập nhật lúc: 15:42 20/11/2026",
+   "tt": "ok"
+  },
+  {
    "ma": "doji",
    "chu": "Cập nhật lúc: 15:42 20/11/2026",
    "tt": "ok"
@@ -90,14 +95,6 @@
    "ma": "btmh",
    "chu": "Cập nhật lúc: 15:42 20/11/2026",
    "tt": "ok"
-  },
-  {
-   "ma": "sjc:SJC.vang_mieng",
-   "chu": "Cập nhật lúc: 15:42 20/11/2026"
-  },
-  {
-   "ma": "sjc:SJCN.nhan_9999",
-   "chu": "Cập nhật lúc: 15:42 20/11/2026"
   }
  ]
 }
