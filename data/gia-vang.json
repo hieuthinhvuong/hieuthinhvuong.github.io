@@ -1,59 +1,44 @@
 {
  "phien_ban": 1,
- "kiem_luc": "2026-11-20T14:10:56+07:00",
+ "kiem_luc": "2026-11-20T14:14:31+07:00",
  "don_vi": "triệu đồng/lượng",
+ "ghi_chu": [],
  "dong": [
   {
    "hang": "SJC",
    "loai": "vang_mieng",
-   "trang_thai": "chua_co",
-   "ly_do": "nguồn đang dừng (có tệp DUNG-SJC)",
-   "gio_ok_cuoi": null,
-   "gio_doc": "2026-11-20T14:10:56+07:00",
    "mua": null,
    "ban": null,
    "gio_nguon": null,
-   "qua": ""
+   "trang_thai": "chua_co",
+   "gio_ok_cuoi": null
   },
   {
    "hang": "SJC",
    "loai": "nhan_9999",
-   "trang_thai": "chua_co",
-   "ly_do": "nguồn đang dừng (có tệp DUNG-SJC)",
-   "gio_ok_cuoi": null,
-   "gio_doc": "2026-11-20T14:10:56+07:00",
    "mua": null,
    "ban": null,
    "gio_nguon": null,
-   "qua": ""
+   "trang_thai": "chua_co",
+   "gio_ok_cuoi": null
   },
   {
    "hang": "DOJI",
    "loai": "vang_mieng",
-   "ten_goc": "VÀNG MIẾNG SJC",
    "mua": 129.2,
    "ban": 134.2,
    "gio_nguon": "2026-11-20T14:04:00+07:00",
-   "gio_doc": "2026-11-20T14:04:49+07:00",
-   "gio_ok_cuoi": "2026-11-20T14:04:49+07:00",
    "trang_thai": "ok",
-   "ly_do": "",
-   "qua": "",
-   "gio_doi": "2026-11-20T12:35:21+07:00"
+   "gio_ok_cuoi": "2026-11-20T14:04:49+07:00"
   },
   {
    "hang": "DOJI",
    "loai": "nhan_9999",
-   "ten_goc": "NHẪN TRÒN 9999 HƯNG THỊNH VƯỢNG",
    "mua": 129.3,
    "ban": 133.3,
    "gio_nguon": "2026-11-20T14:04:00+07:00",
-   "gio_doc": "2026-11-20T14:04:49+07:00",
-   "gio_ok_cuoi": "2026-11-20T14:04:49+07:00",
    "trang_thai": "ok",
-   "ly_do": "",
-   "qua": "",
-   "gio_doi": "2026-11-20T13:33:25+07:00"
+   "gio_ok_cuoi": "2026-11-20T14:04:49+07:00"
   }
  ],
  "the_gioi": {
@@ -61,19 +46,17 @@
   "usd_oz": 3553.8,
   "ty_gia": 25980.0,
   "quy_doi": 111.32,
-  "gio": "2026-11-20T14:10:35+07:00",
-  "nguon": "gold-api.com, tỷ giá bán Vietcombank"
+  "gio": "2026-11-20T14:10:35+07:00"
  },
- "ghi_chu": [],
  "gio_hang": [
   {
    "hang": "SJC",
-   "chu": "Đang cập nhật",
+   "chu": "",
    "tt": "chua_co"
   },
   {
    "hang": "DOJI",
-   "chu": "Cập nhật 14:04 20/11",
+   "chu": "Cập nhật lúc: 14:04 20/11/2026",
    "tt": "ok"
   }
  ]
